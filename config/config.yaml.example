@@ -1,0 +1,28 @@
+# config/config.yaml
+# ─────────────────────────────────────────────────────────────
+# DO NOT commit this file to GitHub.
+# It is listed in .gitignore for a reason — it contains
+# network credentials and local paths.
+# ─────────────────────────────────────────────────────────────
+
+mqtt:
+  broker: "192.168.1.XXX"   # replace with your Linux machine's local IP
+                              # find it by running: hostname -I
+  port: 1883
+  topic: "sensors/pico1"
+
+database:
+  # path is relative to project root
+  path: "data/pipeline.db"
+
+pipeline:
+  read_interval_seconds: 5      # how often Pico W reads sensors
+  transform_interval_seconds: 60 # how often transform.py runs
+  rolling_window_readings: 12    # readings in rolling average (~60s at 5s interval)
+  anomaly_z_threshold: 2.5       # z-score threshold for flagging anomalies
+
+dashboard:
+  host: "0.0.0.0"
+  port: 8050
+  refresh_interval_ms: 3000      # how often browser polls for new data
+  lookback_minutes: 30           # how much history to display

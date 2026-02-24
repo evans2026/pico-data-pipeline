@@ -1,0 +1,19 @@
+# requirements.txt
+# Install with: pip install -r requirements.txt
+
+# MQTT client for Linux side
+paho-mqtt>=1.6.1
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Dashboard
+dash>=2.14.0
+plotly>=5.18.0
+
+# Config parsing
+pyyaml>=6.0
+
+# Scheduling (optional — for running transform.py on a timer)
+apscheduler>=3.10.0

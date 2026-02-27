@@ -1,8 +1,7 @@
 # config/config.yaml
 # ─────────────────────────────────────────────────────────────
-# DO NOT commit this file to GitHub.
-# It is listed in .gitignore for a reason — it contains
-# network credentials and local paths.
+# This is a template. 
+# Copy this file to config.yaml and update with your own values.
 # ─────────────────────────────────────────────────────────────
 
 mqtt:

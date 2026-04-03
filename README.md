@@ -142,7 +142,7 @@ mosquitto_sub -t "sensors/pico1" -v
 ### 2. Clone & Install Python Dependencies
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pico-data-pipeline.git
+git clone https://github.com/evans2026/pico-data-pipeline.git
 cd pico-data-pipeline
 pip install -r requirements.txt
 ```
@@ -265,8 +265,3 @@ This is a deliberate, interpretable choice — as opposed to black-box ML — ap
 - Git, documentation, system design thinking
 
 ---
-
-## Author
-
-**Evan Sahinovic**  
-[evan@sahinovic.org](mailto:evan@sahinovic.org) · [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
